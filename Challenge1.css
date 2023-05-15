@@ -1,0 +1,636 @@
+
+:root {
+    --font-style: normal;
+    --font-family: 'Inter', sans-serif;
+    --color-fondo: #E5E5E5;
+    --color-azul: #0A3871;
+    --color-gris: #D8DFE8;
+    --color-blanco: #FFFFFF;
+    --color-texto: #495057;
+}
+
+body {
+    background-color: var(--color-fondo);
+    min-width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-fondo);
+    padding: 10px 0;
+}
+
+    .encabezado {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .logo {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+    }
+
+    .logoONE {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
+
+    .Titulo-pag {
+        font-size: 200%;
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        left: 40%;
+    }
+
+.Principal {
+    padding: 23px 0;
+    background: var(--color-fondo);
+    width: 100%;
+    height: 80vh;
+}
+
+    .Container {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+        .bloque1 {
+            display: inline-block;
+            vertical-align: top;
+            width: 65%;
+            height: 100%;
+        }
+
+            .info {
+                width: 95%;
+                height: 85%;
+            }
+
+                .caja1 {
+                    width: 100%;
+                    height: 88%;
+                    border-color: transparent;
+                    color: var(--color-azul);
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-size: 150%;
+                    resize: none;
+                    border-radius: 5px;
+                }
+
+                .caja1::placeholder {
+                    text-align: start;
+                    vertical-align: top;
+                    color: var(--color-azul);
+                }
+    
+                .caja1:focus, .caja1:active {
+                    border: none;
+                    outline: none;
+                }
+
+                .condiciones {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-style: italic;
+                }
+
+            .botones {
+                width: 95%;
+                margin: 0 20px;
+            }
+
+                .encriptador {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: inline-flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px;
+                    width: 45%;
+                    height: 67px;
+                    margin: 10px;
+                    background-color: var(--color-azul);
+                    border-radius: 24px;
+                    border-color: transparent;
+                    transition: 100ms ease-in-out;
+                }
+
+                .textencrip:hover{
+                    border-bottom: 3px solid;
+                    border-color: white;
+                    color: white;
+                }
+
+                .desencriptador {
+                    color: black;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: inline-flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px;
+                    width: 45%;
+                    height: 67px;
+                    margin: 10px;
+                    background-color: var(--color-blanco);
+                    border-radius: 24px;
+                    border-color: transparent;
+                    transition: 100ms ease-in-out;
+                }
+    
+                .textdesencrip:hover{
+                    border-bottom: 3px solid;
+                    border-color: var(--color-azul);
+                    color: var(--color-azul);
+                }
+
+        .bloque2 {
+            display: inline-block;
+            vertical-align: top;
+            width: 34%;
+            height: 100%;
+        }
+
+            .fondo {
+                background-color: white;
+                height: 100%;
+                width: 100%;
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .fondo-inter {
+                    width: 90%;
+                    height: 90%;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    vertical-align: top;
+                }
+
+                    .figura {
+                        width: 80%;
+                        height: 70%;
+                    }
+
+                    .cajaP {
+                        width: 95%;
+                        height: 95%;
+                        border-color: transparent;
+                        color: var(--color-azul);
+                        font-family: var(--font-family);
+                        font-style: normal;
+                        font-size: 150%;
+                        resize: none;
+                        border-radius: 5px;
+                    }
+
+                    .copiartext {
+                        position: relative;
+                        top: 0;
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #0A3871;
+                        border-radius: 24px;
+                        border-color: transparent;
+                        width: 80%;
+                        height: 67px;
+                        margin: 15px;
+                        transition: 100ms ease-in-out;
+                    }
+
+                    .textcopy:hover{
+                        display: inline-flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        border-bottom: 3px solid;
+                        border-color: white;
+                        color: white;
+                    }
+
+                    .text1 {
+                        color: black;
+                        font-family: var(--font-family);
+                        font-size: 200%;
+                        font-weight: bold;
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+
+                    .text2 {
+                        color: var(--color-azul);
+                        font-family: var(--font-family);
+                        font-size: 120%;
+                        font-weight: bold;
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+
+footer {
+    text-align: center;
+    background: var(--color-azul);
+    padding: 20px;
+}
+
+    .Derechos {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .link-codigo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+/* Media para height 780px */
+@media screen and (max-height:780px) {
+.Principal {
+    padding: 23px 0;
+    background: var(--color-fondo);
+    width: 100%;
+    height: 529px;
+}
+}
+
+/* Media para width 700px */
+@media screen and (max-width:750px) {
+    .botones {
+        width: 95%;
+        margin: 0 20px;
+    }
+
+        .encriptador {
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            width: 42%;
+            height: 67px;
+            margin: 10px;
+            background-color: var(--color-azul);
+            border-radius: 24px;
+            border-color: transparent;
+            transition: 100ms ease-in-out;
+        }
+
+        .textencrip:hover{
+            border-bottom: 3px solid;
+            border-color: white;
+            color: white;
+        }
+
+        .desencriptador {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            width: 42%;
+            height: 67px;
+            margin: 10px;
+            background-color: var(--color-blanco);
+            border-radius: 24px;
+            border-color: transparent;
+            transition: 100ms ease-in-out;
+        }
+
+        .textdesencrip:hover{
+            border-bottom: 3px solid;
+            border-color: var(--color-azul);
+            color: var(--color-azul);
+        }
+
+        .figura {
+            width: 80%;
+            height: 60%;
+        }
+
+        .cajaP {
+            width: 95%;
+            height: 95%;
+            color: var(--color-azul);
+            font-size: 150%;
+        }
+
+        .copiartext {
+            position: relative;
+            top: 0;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #0A3871;
+            border-radius: 24px;
+            border-color: transparent;
+            width: 80%;
+            height: 67px;
+            margin: 15px;
+            transition: 100ms ease-in-out;
+        }
+
+        .textcopy:hover{
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 3px solid;
+            border-color: white;
+            color: white;
+        }
+
+        .text1 {
+            color: black;
+            font-family: var(--font-family);
+            font-size: 150%;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .text2 {
+            color: var(--color-azul);
+            font-family: var(--font-family);
+            font-size: 100%;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+        }
+}
+
+/* Media para celulares */
+@media screen and (max-width:480px) {
+    header {
+        width: 100%;
+        height: 60px;
+        background-color: var(--color-fondo);
+        padding: 10px 0;
+    }
+    
+        .encabezado {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+    
+        .logo {
+            width: 10%;
+            height: 90%;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+    
+        .logoONE {
+            width: 30%;
+            height: 90%;
+            position: absolute;
+            top: 12%;
+            left: 25%;
+        }
+    
+        .Titulo-pag {
+            font-size: 150%;
+            font-weight: bold;
+            position: absolute;
+            top: 38%;
+            left: 60%;
+        }
+
+    .Principal {
+        padding: 15px 0;
+        background: var(--color-fondo);
+        width: 100%;
+        height: 1200px;
+    }
+        
+        .Container {
+            width: 95%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+            .bloque1 {
+                display: inline-flex;
+                vertical-align: top;
+                flex-direction: column;
+                width: 100%;
+                height: 48%;
+                padding: 10px 0;
+            }
+        
+                .info {
+                    width: 98%;
+                    height: 85%;
+                }
+        
+                    .caja1 {
+                        width: 100%;
+                        height: 90%;
+                        border-color: transparent;
+                        color: var(--color-azul);
+                        font-family: var(--font-family);
+                        font-style: normal;
+                        font-size: 150%;
+                        resize: none;
+                        border-radius: 5px;
+                    }
+        
+                    .caja1::placeholder {
+                        text-align: start;
+                        vertical-align: top;
+                        color: var(--color-azul);
+                    }
+            
+                    .caja1:focus, .caja1:active {
+                        border: none;
+                        outline: none;
+                    }
+        
+                    .condiciones {
+                        margin-top: 20px;
+                        font-size: 15px;
+                        font-style: italic;
+                    }
+        
+                .botones {
+                    width: 98%;
+                    margin: 0;
+                }
+        
+                    .encriptador {
+                        color: #FFFFFF;
+                        font-size: 15px;
+                        font-weight: bold;
+                        display: inline-flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 5px;
+                        width: 43%;
+                        height: 67px;
+                        margin: 10px;
+                        background-color: var(--color-azul);
+                        border-radius: 24px;
+                        border-color: transparent;
+                        transition: 100ms ease-in-out;
+                    }
+        
+                    .textencrip:hover{
+                        border-bottom: 3px solid;
+                        border-color: white;
+                        color: white;
+                    }
+        
+                    .desencriptador {
+                        color: black;
+                        font-size: 15px;
+                        font-weight: bold;
+                        display: inline-flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 5px;
+                        width: 43%;
+                        height: 67px;
+                        margin: 10px;
+                        background-color: var(--color-blanco);
+                        border-radius: 24px;
+                        border-color: transparent;
+                        transition: 100ms ease-in-out;
+                    }
+            
+                    .textdesencrip:hover{
+                        border-bottom: 3px solid;
+                        border-color: var(--color-azul);
+                        color: var(--color-azul);
+                    }
+
+                .bloque2 {
+                    display: inline-flex;
+                    vertical-align: top;
+                    width: 100%;
+                    height: 48%;
+                    padding: 0;
+                }
+
+                    .fondo {
+                        background-color: white;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .fondo-inter {
+                            width: 90%;
+                            height: 90%;
+                            display: inline-flex;
+                            flex-direction: column;
+                            align-items: center;
+                            vertical-align: top;
+                        }
+
+                            .figura {
+                                width: 80%;
+                                height: 70%;
+                            }
+
+                            .cajaP {
+                                width: 95%;
+                                height: 95%;
+                                color: var(--color-azul);
+                                font-size: 150%;
+                            }
+
+                            .copiartext {
+                                position: relative;
+                                top: 0;
+                                color: #FFFFFF;
+                                font-size: 20px;
+                                font-weight: bold;
+                                background-color: #0A3871;
+                                border-radius: 24px;
+                                border-color: transparent;
+                                width: 80%;
+                                height: 67px;
+                                margin: 15px;
+                                transition: 100ms ease-in-out;
+                            }
+
+                            .textcopy:hover{
+                                display: inline-flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+                                border-bottom: 3px solid;
+                                border-color: white;
+                                color: white;
+                            }
+
+                            .text1 {
+                                color: black;
+                                font-family: var(--font-family);
+                                font-size: 200%;
+                                font-weight: bold;
+                                text-align: center;
+                                margin: 15px 0;
+                            }
+
+                            .text2 {
+                                color: var(--color-azul);
+                                font-family: var(--font-family);
+                                font-size: 120%;
+                                font-weight: bold;
+                                text-align: center;
+                                margin: 15px 0;
+                            }
+
+
+footer {
+    display: inline-flex;
+    text-align: center;
+    background: var(--color-azul);
+    padding: 20px;
+    width: 90%;
+}
+
+    .Derechos {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .link-codigo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

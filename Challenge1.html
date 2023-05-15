@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-Co">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>- Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Challenge1.css">
+        <link rel="shortcut icon" href="Logo_Aura.png" type="image/x-icon">
+    </head>
+    <body>
+        <!--Encabezado-->
+        <header>
+            <div class="encabezado">
+                <img class="logo" src="Logo_Aura.png" alt="Logo aura">
+                <img class="logoONE" src="Logo_ONE.webp" alt="Logo ONE">
+                <h1 class="Titulo-pag">Encriptador</h1>
+            </div>
+        </header>
+
+        <!--Contenido-->
+        <main>
+            <section class="Principal">
+                <div class="Container">
+                    <!--Usuario-->
+                    <div class="bloque1">
+                        <div class="info">
+                            <textarea class="caja1" id="cajatext1" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                            <p class="condiciones">Solo letras minusculas y acentos.</p>
+                        </div>
+                        <div class="botones">
+                            <button class="encriptador" onclick=encriptar()>
+                                <p class="textencrip">Encriptador</p>
+                            </button>
+                            <button class="desencriptador" onclick=desencriptar()>
+                                <p class="textdesencrip">Desencriptador</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--Solucion-->
+                    <div class="bloque2">
+                        <div class="fondo">
+                            <div class="fondo-inter">
+                                <img class="figura" src="Img_Diamante.png" id="figura1" alt="Figura">
+                                <textarea class="cajaP" id="cajatext3" hidden cols="70" rows="10"></textarea>
+                                <p class="text1" id="texto1">Ningun mensaje fue encontrado</p>
+                                <p class="text2" id="texto2">Ingresa el texto que desea encriptar <br> o desencriptar</p>
+                                <button hidden class="copiartext" id="copiarT" onclick=copiar()>
+                                    <p class="textcopy">Copiar</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Pie de pagina-->
+        <footer>
+            <p class="Derechos">Desarrollado por Juan Acosta [<a class="link-codigo" href="#">Ver código</a>]</p>
+        </footer>
+
+        <!--Javascript-->
+        <script src="Challenge1.js"></script>
+    </body>
+</html>
